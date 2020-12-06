@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="conatiner-fluid">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white px-5">
+        <a href="#" class="mr-4">
+          <img src="./images/codecademy_icon.svg" alt="">
+        </a>
+        <div class="nav-togglebtn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img"><title>Search Icon</title><path d="M23.245 23.996a.743.743 0 01-.53-.22L16.2 17.26a9.824 9.824 0 01-2.553 1.579 9.766 9.766 0 01-7.51.069 9.745 9.745 0 01-5.359-5.262c-1.025-2.412-1.05-5.08-.069-7.51S3.558 1.802 5.97.777a9.744 9.744 0 017.51-.069 9.745 9.745 0 015.359 5.262 9.748 9.748 0 01.069 7.51 9.807 9.807 0 01-1.649 2.718l6.517 6.518a.75.75 0 01-.531 1.28zM9.807 1.49a8.259 8.259 0 00-3.25.667 8.26 8.26 0 00-4.458 4.54 8.26 8.26 0 00.058 6.362 8.26 8.26 0 004.54 4.458 8.259 8.259 0 006.362-.059 8.285 8.285 0 002.594-1.736.365.365 0 01.077-.076 8.245 8.245 0 001.786-2.728 8.255 8.255 0 00-.059-6.362 8.257 8.257 0 00-4.54-4.458 8.28 8.28 0 00-3.11-.608z"></path></svg>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img"><title>Bell Icon</title><path d="M11.99 24.001a2.835 2.835 0 01-2.718-2.039.75.75 0 011.439-.423 1.335 1.335 0 002.565.001.755.755 0 01.93-.509.75.75 0 01.509.931 2.844 2.844 0 01-2.725 2.039zm-8.999-4.5a.754.754 0 01-.674-.421.747.747 0 01.083-.791c.006-.009 1.341-1.939 1.341-7.788a8.237 8.237 0 017.5-8.216V.751a.75.75 0 011.5 0v1.534a8.237 8.237 0 017.5 8.216c0 6.303 1.246 7.686 1.258 7.699a.756.756 0 01.187.818.745.745 0 01-.695.483h-18zm16.71-1.5c-.482-1.232-.961-3.47-.961-7.5 0-3.722-3.028-6.75-6.75-6.75s-6.75 3.028-6.75 6.75c0 3.957-.58 6.277-1.046 7.5h15.507z"></path></svg>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Catelog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">For business</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right align-items-center">
+            <li class="nav-item ">
+              <a href="#" class="nav-link">My Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img"><title>Search Icon</title><path d="M23.245 23.996a.743.743 0 01-.53-.22L16.2 17.26a9.824 9.824 0 01-2.553 1.579 9.766 9.766 0 01-7.51.069 9.745 9.745 0 01-5.359-5.262c-1.025-2.412-1.05-5.08-.069-7.51S3.558 1.802 5.97.777a9.744 9.744 0 017.51-.069 9.745 9.745 0 015.359 5.262 9.748 9.748 0 01.069 7.51 9.807 9.807 0 01-1.649 2.718l6.517 6.518a.75.75 0 01-.531 1.28zM9.807 1.49a8.259 8.259 0 00-3.25.667 8.26 8.26 0 00-4.458 4.54 8.26 8.26 0 00.058 6.362 8.26 8.26 0 004.54 4.458 8.259 8.259 0 006.362-.059 8.285 8.285 0 002.594-1.736.365.365 0 01.077-.076 8.245 8.245 0 001.786-2.728 8.255 8.255 0 00-.059-6.362 8.257 8.257 0 00-4.54-4.458 8.28 8.28 0 00-3.11-.608z"></path></svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" role="img"><title>Bell Icon</title><path d="M11.99 24.001a2.835 2.835 0 01-2.718-2.039.75.75 0 011.439-.423 1.335 1.335 0 002.565.001.755.755 0 01.93-.509.75.75 0 01.509.931 2.844 2.844 0 01-2.725 2.039zm-8.999-4.5a.754.754 0 01-.674-.421.747.747 0 01.083-.791c.006-.009 1.341-1.939 1.341-7.788a8.237 8.237 0 017.5-8.216V.751a.75.75 0 011.5 0v1.534a8.237 8.237 0 017.5 8.216c0 6.303 1.246 7.686 1.258 7.699a.756.756 0 01.187.818.745.745 0 01-.695.483h-18zm16.71-1.5c-.482-1.232-.961-3.47-.961-7.5 0-3.722-3.028-6.75-6.75-6.75s-6.75 3.028-6.75 6.75c0 3.957-.58 6.277-1.046 7.5h15.507z"></path></svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="./images/profile_picture.jpg" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-btn btn btn-primary btn-lg btn-block">
+                <strong>Try Pro For Free</strong>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <header class="learncss d-flex text-center justify-content-center" style="background-color: rgb(60, 100, 194)">
+      <h1 class="display-3 text-white" style="text-decoration: solid;">
+        <strong>Learn CSS</strong>
+      </h1>
+      <hr/>
+      <p class="lead">
+        <btn class="resumebtn btn btn-lg" href="#">
+          <strong>Resume</strong>
+        </btn>
+      </p>
+    </header>
+    <div class="container mb-0 pb-0">
+      <div class="row d-flex justify-content-start align-items-end mt-5">
+        <div class="list-inline col">
+          <button class="tab activeTab">
+            Overview
+          </button>
+          <button class="tab nonactiveTab">
+            Syllabus
+          </button>
+        </div>
+      </div>
+    </div>
+    <main class="container-fluid px-0">
+      <div class="container my-0">
+        <div class="row">
+          <div class="col col-md-8">
+            <div class="overview">
+              <div class="overview-items">
+                <h3 class="my-4" style="color: blue;"><strong>Why Learn CSS?</strong></h3>
+                <p>
+                  Without CSS, every web page would be drab plain text and images
+                  that flowed straight down the page. With CSS, you can add color
+                  and background images and change the layout of your page — your
+                  web pages can feel like works of art!
+                </p>
+              </div>
+              <div class="overview-items">
+                <h3 class="my-4"><strong>Take-Away Skills:</strong></h3>
+                <p>
+                  You will learn many aspects of styling web pages! You’ll be able
+                  to set up the correct file structure, edit text and colors, and
+                  create attractive layouts. With these skills, you’ll be able to
+                  customize the appearance of your web pages to suit your every
+                  need!
+                </p>
+              </div>
+              <div class="overview-items">
+                <h3 class="my-4"><strong>Note on Prerequisites:</strong></h3>
+                <p>
+                  We recommend that you complete <a href="#" style="text-decoration: underline; color: #4b35ef;">Learn HTML</a> before
+                  learning CSS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4">
+            <aside class="infoBox text-center">
+              <dl class="aside py-3">
+                <dd>Earn</dd>
+                <dd class="aside_info">Certificate</dd>
+                <dl>of completion with </dl>
+              </dl>
+              <dl class="aside py-3">
+                <dd>Join</dd>
+                <dd class="aside_info">490,362</dd>
+                <dl>people who have taken this course</dl>
+              </dl>
+              <dl class="aside py-3">
+                <dd>Time to complete</dd>
+                <dd class="aside_info">15 Hours</dd>
+              </dl>
+              <dl class="aside py-3">
+                <dd>prerequisites</dd>
+                <dd class="aside_learn"><strong>Learn HTML</strong></dd>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="taken-by container">
+        <div class="jumbotron bg-white">
+          <div class="container">
+            <div class="row text-left justify-content-center mb-50">
+              <div class="col col-md-10">
+                <h2>
+                  <strong
+                    >Codecademy courses have been taken by employees at</strong
+                  >
+                </h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col col-md-10 logo">
+                <img class="googleLogo" alt="Google Logo" src="./images/google_icon.svg">
+                <img class="facebookLogo" alt="Facebook Logo" src="./images/facebook_icon.svg">
+                <img class="nasaLogo" alt="NASA Logo" src="./images/nasa_icon.svg">
+                <img class="ibmLogo" alt="IBM Logo" src="./images/ibm_icon.svg">
+                <img class="dropboxLogo" alt="Dropbox Logo" src="./images/dropbox_icon.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container-fluid px-0">
+        <div class="jumbotron jumbotron-fluid pb-0">
+          <header class="col text-center">
+            <h1><strong>What You'll Learn</strong></h1>
+          </header>
+        </div>
+        <div class="row" id="whatyoulearn">
+          <div class="row w-100">
+            <dl
+              class="list-inline col d-flex align-items-center justify-content-center text-center"
+            >
+              <dt class="list-inline-item col-md-1 itemIndex">1</dt>
+              <dd class="list-inline-item col-md-7">
+                <div class="text-left">
+                  <h3 class="detailTitle">Selector and Visual Rules</h3>
+                  <p class="content">
+                    In this course, you will learn how to style individual and
+                    groups of elements using various visual CSS rules.
+                  </p>
+                </div>
+              </dd>
+              <dd class="list-inline-item col-md">
+                <div class="buttonContainer">
+                  <button class="viewbtn">View detail</button>
+                  <button class="startbtn">Start</button>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="row w-100">
+            <dl
+              class="list-inline col d-flex align-items-center justify-content-center text-center"
+            >
+              <dt class="list-inline-item col-md-1 itemIndex">2</dt>
+              <dd class="list-inline-item col-md-7">
+                <div class="text-left">
+                  <h3 class="detailTitle">The Box Model</h3>
+                  <p class="content">
+                    In this course, you will learn how to use the Box Model to
+                    position HTML elements on your web page.
+                  </p>
+                </div>
+              </dd>
+              <dd class="list-inline-item col-md">
+                <div class="buttonContainer">
+                  <button class="viewbtn">View detail</button>
+                  <button class="startbtn">Start</button>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="row w-100">
+            <dl
+              class="list-inline col d-flex align-items-center justify-content-center text-center"
+            >
+              <dt class="list-inline-item col-md-1 itemIndex">3</dt>
+              <dd class="list-inline-item col-md-7">
+                <div class="text-left">
+                  <h3 class="detailTitle">Display and Positioning</h3>
+                  <p class="content">
+                    In this course, you will learn CSS rules for displaying and
+                    positioning elements on your web page.
+                  </p>
+                </div>
+              </dd>
+              <dd class="list-inline-item col-md">
+                <div class="buttonContainer">
+                  <button class="viewbtn">View detail</button>
+                  <button class="startbtn">Start</button>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="row w-100">
+            <dl
+              class="list-inline col d-flex align-items-center justify-content-center text-center"
+            >
+              <dt class="list-inline-item col-md-1 itemIndex">4</dt>
+              <dd class="list-inline-item col-md-7">
+                <div class="text-left">
+                  <h3 class="detailTitle">Colors</h3>
+                  <p class="content">
+                    In this course, you will learn all about choosing and
+                    setting CSS colors using a variety of techniques.
+                  </p>
+                </div>
+              </dd>
+              <dd class="list-inline-item col-md">
+                <div class="buttonContainer">
+                  <button class="viewbtn">View detail</button>
+                  <button class="startbtn">Start</button>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="row w-100">
+            <dl
+              class="list-inline col d-flex align-items-center justify-content-center text-center"
+            >
+              <dt class="list-inline-item col-md-1 itemIndex">5</dt>
+              <dd class="list-inline-item col-md-7">
+                <div class="text-left">
+                  <h3 class="detailTitle">Typography</h3>
+                  <p class="content">
+                    Learn all about CSS typography, such as how to include fonts
+                    from other sources and how to style your text.
+                  </p>
+                </div>
+              </dd>
+              <dd class="list-inline-item col-md">
+                <div class="buttonContainer">
+                  <button class="viewbtn">View detail</button>
+                  <button class="startbtn">Start</button>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="row w-100">
+            <div
+              class="col text-center p-5"
+            >
+              <button class="morelessonsbtn">+ 3 more lessons</button>
+            </div>
+          </div>
+        </div>
+        <div class="what_create justify-content-center py-5">
+          <div class="jumbotron jumbotron-fluid mb-0">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2><strong>WHAT YOU'LL CREATE</strong></h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h3 class="text-muted">
+                    Portfolio projects that showcase your new skills
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+              <div class="card py-0">
+                <img class="card-img-top" src="./images/recipe.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Healthy Recipes</h5>
+                  <p class="card-text text-truncate">
+                    Using CSS selectors, you’ll give a recipe website style..
+                  </p>
+                </div>
+              </div>
+              <div class="card py-0">
+                <img class="card-img-top" src="./images/woodruff.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Olivia Woodruff Portfolio</h5>
+                  <p class="card-text text-truncate">
+                    It's time to build fluency in CSS Fundamentals. In this next Pro Project, we're going to practice Visual Rules in CSS so you can hone your skills and feel confident taking them to the real world. Why? It's important to have a good grasp on the basic styling principles of a webpage. What's next? A coffee lover, photographer, developer. You got this!
+                  </p>
+                </div>
+              </div>
+              <div class="card py-0">
+                <img class="card-img-top" src="./images/DaviesBurger.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">The Box Model: Davie's Burgers</h5>
+                  <p class="card-text text-truncate">
+                    It's time to build fluency in CSS Box Model. In this next Pro Project, we're going to practice box manipulation so you can hone your skills and feel confident taking them to the real world. Why? You'll be able to hone the skill of accurately setting up your box model properties and sizing each element on your webpage. What's next? Medium rare, hold the onions, extra CSS. You got this!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="overview_how py-5">
+        <div class="container text-center">
+          <header class="row justify-content-center py-5">
+            <div class="col">
+              <h2><strong>HOW YOU'LL MASTER IT</strong></h2>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+              <h3 class="text-muted">
+                <strong
+                  >Stress-test your knowledge with quizzes that help commit
+                  syntax to memory</strong
+                >
+              </h3>
+            </div>
+          </header>
+          <div class="row d-flex flex-wrap justify-content-center py-5">
+            <a class="px-4" href="#">
+              <div class="col itemBox ">
+                <h5><strong>CSS Setup and Selectors</strong></h5>
+              </div>
+            </a>
+            <a class="px-4" href="#">
+              <div class="col itemBox ">
+                <h5><strong>CSS Visual Rules</strong></h5>
+              </div>
+            </a>
+            <a class="px-4" href="#">
+              <div class="col itemBox ">
+                <h5><strong>Box Model Quiz</strong></h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="w-100"/>
+    <footer class="container-fluid px-5">
+      <div class="row justify-content-around px-5">
+        <div class="col col-md-auto col-sm-6 order-sm-1">
+          <header class="my-2 text-uppercase">codecademy</header>
+          <ul class="linkArea text-capitalize list-unstyled">
+            <li><a href="#">about</a></li>
+            <li><a href="#">pro membership</a></li>
+            <li><a href="#">for business</a></li>
+            <li><a href="#">for schools</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">stories</a></li>
+            <li><a href="#">we're hiring</a></li>
+            <li>
+              <div class="socialMedia list-inline">
+                <a aria-label="Follow us on Twitter" class="footer_icon" href="https://twitter.com/Codecademy"><svg viewBox="0 0 16 16" width="16px" height="16px" fill="currentColor" role="img">
+                  <title>Twitter Icon</title>
+                  <path fill="currentColor" d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.8-2.7-.2-5.2-1.5-6.8-3.5-.3.5-.4 1.1-.4 1.6 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.2-.6.2-.9.2-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"></path></svg>
+                </a>
+                <a aria-label="Like us on Facebook" class="footet_icon" href="https://codecademy.com/users/redirect?redirect_url=https://www.facebook.com/groups/codecademy.community"><svg viewBox="0 0 16 16" width="16px" height="16px" fill="currentColor" role="img">
+                  <title>Facebook Icon</title>
+                  <path fill="currentColor" d="M6.1 16V8.5h-2V5.8h2V3.5C6.1 1.7 7.3 0 10 0c1.1 0 1.9.1 1.9.1l-.1 2.5h-1.7C9.1 2.6 9 3 9 3.8v2h2.9l-.1 2.7H8.9V16H6.1z"></path></svg>
+                </a>
+                <a aria-label="Follow us on Instagram" class="footer_icon" href="https://instagram.com/codecademy"><svg viewBox="0 0 16 16" width="16px" height="16px" fill="currentColor" role="img">
+                  <title>Instagram Icon</title>
+                  <path fill="currentColor" d="M14 16H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h12c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2zM8 4.9c-1.2 0-2.3.7-2.8 1.8 0 .1-.1.1-.1.2V7c-.1.1-.1.2-.1.2v.7C5 9.6 6.4 11 8.1 11s3.1-1.4 3.1-3.1v-.7s0-.1-.1-.2v-.1c0-.1-.1-.1-.1-.2-.7-1.1-1.8-1.8-3-1.8zm6.2-2.3c0-.4-.4-.8-.8-.8h-1.6c-.4 0-.8.4-.8.8v1.6c0 .4.4.8.8.8h1.6c.4 0 .8-.4.8-.8V2.6zm0 4.1h-1.5c.1.4.2.8.2 1.3 0 2.7-2.2 4.9-4.9 4.9S3.1 10.7 3.1 8c0-.5.1-.9.2-1.3H1.8v6.7c0 .4.4.8.8.8h10.8c.4 0 .8-.4.8-.8V6.7z"></path></svg>
+                </a>
+                <a aria-label="Subscribe to Codecademy on YouTube" class="footer_icon" href="https://www.youtube.com/channel/UC5CMtpogD_P3mOoeiDHD5eQ"><svg viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor" role="img">
+                  <title>Youtube Icon</title>
+                  <path d="M5.9 5.12v4.26a.75.75 0 001.5 0V5.12l2.85-3.8A.75.75 0 109 .42l-2.4 3.2L4.25.42a.75.75 0 10-1.2.9zm3.55-.24v3a2.25 2.25 0 004.5 0v-3a2.25 2.25 0 10-4.5 0zm1.5 0a.75.75 0 111.5 0v3a.75.75 0 01-1.5 0zm4.86 4.44a2.73 2.73 0 001.94.8 2.72 2.72 0 001.36-.38.74.74 0 00.64.38.75.75 0 00.75-.75v-6a.75.75 0 00-1.5 0v4a1.25 1.25 0 01-1.25 1.25 1.25 1.25 0 01-1.25-1.25v-4a.75.75 0 10-1.5 0v4a2.73 2.73 0 00.81 1.95zm2.69 8.05a.5.5 0 00-1 0v.5h1zm-4.5-.5a.5.5 0 00-.5.5v2a.5.5 0 001 0v-2a.5.5 0 00-.5-.5z"></path>
+                  <path d="M19 11.87H5a4.5 4.5 0 00-4.5 4.5v3a4.5 4.5 0 004.5 4.5h14a4.5 4.5 0 004.5-4.5v-3a4.5 4.5 0 00-4.5-4.5zm-11 4H6.5v4.48a.5.5 0 01-1 0v-4.48H4a.5.5 0 010-1h4a.5.5 0 110 1zm3.48 3.5v1a.5.5 0 01-.86.35 1.48 1.48 0 01-.64.15 1.5 1.5 0 01-1.5-1.5v-3a.5.5 0 011 0v3a.5.5 0 001 0v-3a.5.5 0 011 0zm4 0a1.5 1.5 0 01-1.5 1.5 1.48 1.48 0 01-.66-.16.5.5 0 01-.84-.36v-6a.5.5 0 011 0V16a1.48 1.48 0 01.5-.09 1.5 1.5 0 011.5 1.5zm2.59 1.5a1.69 1.69 0 01-1.59-1.62v-1.88a1.5 1.5 0 013 0v1a.5.5 0 01-.5.5H17.5v.38a.7.7 0 00.59.62c.23 0 .59-.1.59-.37a.5.5 0 011 0 1.46 1.46 0 01-1.59 1.37z"></path></svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-md-7 col-sm-12 order-sm-3">
+        <header class="my-2 text-uppercase">catalog</header>
+        <div class="row py-0">
+          <div class="col col-md-4 col-sm-4 py-0">
+              <ul class="linkarea text-capitalize list-unstyled">
+                <li class="text-uppercase"><strong>subjects</strong></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">DataScience</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Developer Tools</a></li>
+                <li><a href="#">Machine Learning</a></li>
+                <li><a href="#">Code Foundations</a></li>
+                <li><a href="#">Web Design</a></li>
+              </ul>
+            </div>
+            <div class="col col-md-8 col-sm-8 py-0">
+              <header class="text-uppercase"><strong>languages</strong></header>
+              <div class="linkarea text-capitalize py-0">
+                <div class="row py-0">
+                  <ul class="col col-md-6 list-unstyled">
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Bash/Shell</a></li>
+                    <li><a href="#">Ryby</a></li>
+                  </ul>
+                  <ul class="col col-md-6 list-unstyled">
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">C#</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">Go</a></li>
+                    <li><a href="#">Swift</a></li>
+                    <li><a href="#">Kotllin</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-auto col-sm-6 order-md-3 order-sm-2">
+          <header class="py-2 text-uppercase">resources</header>
+          <ul class="linkarea text-capitalize list-unstyled">
+            <li><a href="#">Beta Content</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Cheatsheets</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="w-100 my-0">
+      <div class="row justify-content-around">
+        <div class="w-60">
+          <span class="legalText">
+            <a href="#">Private policy</a>
+            <span class="mx-1">|</span>
+            <a href="#">Do Not Sell My Personal Information</a>
+            <span class="mx-1">|</span>
+            <a href="#">Terms</a>
+          </span>
+        </div>
+        <div class="w-40">
+          <span class="legalText">
+            Made with <span>love</span> in NYC
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2020 Codecademy
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

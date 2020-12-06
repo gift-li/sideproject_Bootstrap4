@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    margin: 0;
+    font-family: Apercu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #484848;
+    text-align: left;
+    background-color: #fff;
+}
+div, aside, footer {
+    padding: 0.5rem 0 0.5rem 0;
+}
+nav, main, footer{
+    padding: 0;
+}
+dd {
+    margin: 0;
+}
+.nav-btn {
+    color: #fff;
+    background-color: #6400e4;
+    border-color: transparent;
+    text-decoration: solid;
+}
+.learncss {
+    min-height: 20rem;
+    max-width: 100%;
+    flex-direction: column;
+}
+.tab {
+    border: 0;
+    border-radius: unset;
+    background: #fff;
+    color: #000;
+    position: relative;
+    font-size: 2rem;
+    padding-right: 2rem;
+    padding-left: 0;
+}
+.activeTab {
+    color: #6437cc;
+    text-decoration-line: underline;
+}
+.nonactiveTab {
+    color: #000;
+}
+.aside_info {
+    display: block;
+    color: #646466;
+    font-size: 2.125rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.aside_learn {
+    color: #4b35ef;
+    font-size: 1.3125rem;
+    text-decoration: none;
+}
+.overview-items {
+    padding: 0;
+}
+#whatyoulearn {
+    border-left: .375rem solid #5788fa;
+    margin: 0 1rem;
+    list-style: none;
+    padding: 0;
+    background: #fff;
+    border-radius: .25rem;
+    box-shadow: 0.0625rem 0.0625rem 0.125rem #f6f5fa;
+}
+.detailTitle {
+    color: #2d5dcc;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    justify-content: flex-start;
+    text-align: left;
+    white-space: pre-wrap;
+}
+.itemIndex {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    color: #646466;
+    width: 8rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.viewbtn {
+    color: #3069f0;
+    background-color: initial;
+    border-color: transparent;
+}
+.startbtn {
+    color: #3069f0;
+    background-color: initial;
+    border: 1px solid #3069f0;
+}
+.jumbotron {
+    background-color: #F6F5FA; 
+}
+.resumebtn {
+    padding: .75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.33333;
+    min-width: 10rem;
+    border-radius: 50px;
+    color: #000;
+    background-color: #ffd500;
+    border-color: transparent;
+}
+.what {
+    background-color: #F6F5FA;
+}
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.morelessonsbtn {
+    color: #2d5dcc;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    font-size: 150%;
+}
+.card {
+    width: 20rem;
+    margin: 0 1.5625rem 1.5625rem;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    position: relative;
+    /* transition: box-shadow .25s ease-in; */
+}
+.card-img-top {
+    max-width: 100%;
+    height: 14.0625rem;
+    background-size: cover;
+}
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.card-text {
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    max-height: 3rem;
+}
+button {
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    min-width: 8rem;
+}
+.itemBox {
+    color: #000;
+    padding: 1.125rem 0;
+    border-left: .375rem solid #5788fa;
+    min-width: 15rem;
+    margin: 0 1.5625rem 1.5625rem;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    position: relative;
+    transition: box-shadow .25s ease-in;
+}
+footer a {
+    width: 100%;
+    margin: 0 auto;
+    font-size: .95rem;
+    color: #323233;
+    line-height: 1.75rem;
+}
+.legalText {
+    flex-grow: 1;
+    font-size: .875rem;
+}
